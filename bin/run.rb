@@ -4,17 +4,15 @@ puts "hello world"
 
 cli = Interface.new
 user_object = cli.welcome
-while(!user_object)
+
+while user_object == nil
     user_object = cli.welcome
 end
 
 cli.user = user_object
 
-choice = cli.main_menu
+cli.main_menu
 
-while choice!= "Exit"
-    choice = cli.main_menu
-end
-binding.pry
-
+# puts user_object.name
+# binding.pry
 0

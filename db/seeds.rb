@@ -14,4 +14,4 @@ enrollment2 = Enrollment.create(user_id: user1.id, course_id: course3.id)
 
 puts 'loaded'
 
-binding.pry
+# binding.pry
